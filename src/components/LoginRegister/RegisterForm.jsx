@@ -23,7 +23,7 @@ import two from './two.jpg'
           await axios.post("https://ecommerce-backend-2sm5.onrender.com/api/register",{
             name: name,
             email: email,
-            password: password,
+            password: password, 
            
        });
          alert("registration successfull");

@@ -1,0 +1,254 @@
+
+.cart-page {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 20px;
+    margin-top: -10px;
+    box-sizing: border-box;
+
+  }
+  
+  .cart-container {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.1);
+    width: 400px; /* Fixed width for proper alignment */
+  }
+  
+  .cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #f8f9fa;
+    padding: 10px;
+    margin: 10px 0;
+    border-radius: 8px;
+  }
+  
+  .cart-item img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    margin-right: 10px;
+  }
+  
+  .cart-item h4 {
+    flex-grow: 1;
+    font-size: 18px;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  .cart-item p {
+    font-size: 16px;
+    font-weight: bold;
+    color: red;
+    margin-right: 10px;
+  }
+  
+  .quantity-container {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  
+  .quantity-container button {
+    background: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .remove-btn {
+    background: red;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    cursor: pointer;
+    border-radius: 4px;
+  }
+  
+  .total-container {
+    text-align: center;
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 10px;
+  }
+  
+  .order-btn {
+    background: green;
+    color: white;
+    border: none;
+    padding: 10px;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 18px;
+    width: 100%;
+  }
+/*   
+/* Cart Page Container */
+.cart-page {
+    width: 90%;
+    margin: 20px auto;
+    text-align: center;
+    padding: 25px;
+    border: 1px solid #ddd;
+    /* background-color: #f9f9f9; */
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.1);
+    font-size: 24px; /* Bigger font size */
+    color: #555; /* Dark gray for better visibility */
+    text-align: center;
+    /* margin-top: 20px; */
+}
+.cart-page a{
+      font-weight: bold;
+      color: #a31919
+}
+/* Cart Heading */
+.cart-page h2 {
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Cart Item List */
+.cart-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: white;
+    padding: 15px;
+    margin: 10px 0;
+    border-radius: 8px;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Product Image */
+.cart-item img {
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+    border-radius: 5px;
+}
+
+/* Product Details */
+.cart-item h4 {
+    flex: 2;
+    text-align: left;
+    margin-left: 15px;
+    color: #333;
+}
+
+/* Product Price */
+.cart-item p {
+    font-weight: bold;
+    color: #555;
+}
+
+/* Quantity Buttons */
+.cart-item button {
+    background-color: #007bff;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    margin: 0 5px;
+    cursor: pointer;
+    border-radius: 4px;
+}
+
+.cart-item button:hover {
+    background-color: #0056b3;
+}
+
+/* Remove Button */
+.cart-item button:last-child {
+    background-color: #dc3545;
+}
+
+.cart-item button:last-child:hover {
+    background-color: #b52b38;
+}
+
+/* Total Amount */
+.cart-page h3 {
+    margin-top: 20px;
+    font-size: 22px;
+    color: #333;
+}
+
+/* Order Button */
+.order-btn {
+    background-color: #28a745;
+    color: white;
+    padding: 12px 20px;
+    border: none;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 15px;
+    border-radius: 5px;
+    width: 200px;
+}
+
+.order-btn:hover {
+    background-color: #218838;
+}
+
+/* Empty Cart Message */
+.cart-page p {
+    font-size: 18px;
+    color: #555;
+}   
+/* Order Success Message */
+/* Order Success Message */
+/* Order Success Message - Bigger and More Noticeable */
+.order-success {
+    background-color: #28a745;
+    color: white;
+    font-size: 24px; /* Increased font size */
+    font-weight: bold;
+    text-align: center;
+    padding: 20px; /* Increased padding */
+    border-radius: 12px; /* Rounded corners */
+    margin-bottom: 20px;
+    width: 80%; /* Adjusted width */
+    margin: 20px auto; /* Centered */
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2); /* Added shadow for better visibility */
+    animation: fadeIn 0.5s ease-in-out, fadeOut 0.5s ease-in-out 2.5s forwards;
+  }
+  
+  /* Fade-in and Fade-out Animation */
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+    to {
+      opacity: 1;
+      transform: scale(1);
+    }
+  }
+  
+  @keyframes fadeOut {
+    from {
+      opacity: 1;
+      transform: scale(1);
+    }
+    to {
+      opacity: 0;
+      transform: scale(0.9);
+    }
+  }
+  
+  
+  .empty-cart-message {
+    font-size: 28px; /* Bigger font size */
+    font-weight: bold;
+    color: #555; /* Dark gray for better visibility */
+    text-align: center;
+    margin-top: 20px;
+  }
+  

@@ -1,0 +1,46 @@
+
+.header{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 10px 5px;
+    background-color: #333;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    margin-right: 10px;
+}
+
+.logo{
+    font-size: 30px;
+    color: white;
+    font-weight: 700;
+}
+.navbar a {
+    position: relative;
+    /* right: 27px; */
+    font-size: 17px;
+    color: #fffefe;
+    font-weight: 500;
+    margin-right: 43px;
+}
+.cart{
+    position: absolute;
+    right: 15px;
+    top: 21px;
+    margin-left: 4px;
+}
+.navbar a::before {
+    content: '';
+    position: absolute;
+    top: 100%;
+    width: 0;
+    height: 2px;
+    background-color: white;
+    transition: .3s;
+}
+.navbar a:hover::before{
+    width: 100%;
+}

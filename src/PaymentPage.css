@@ -1,0 +1,55 @@
+.payment-container {
+    width: 440px;
+    background: rgb(231, 216, 216);
+    padding: 40px;
+    border-radius: 10px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    margin: 50px auto;
+  }
+  /* .full{
+    width: 100vw; 
+    min-height: 100vh; 
+    padding: 20px;
+    box-sizing: border-box;
+  } */
+  .payment-container h2 {
+    text-align: center;
+    margin-bottom: 20px;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+  }
+  
+  .form-group input {
+    width: 100%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  
+  .form-row {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .form-row .form-group {
+    width: 48%;
+  }
+  
+  .pay-btn {
+    width: 100%;
+    padding: 10px;
+    background: green;
+    color: white;
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  

@@ -1,0 +1,116 @@
+body {
+    font-family: "Poppins", serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+  }
+.Wrapper1{
+    position: relative;
+    width: 415px;
+    height: 500px;
+    background-color: transparent;
+    border: 2px solid rgba(255, 255, 255, .1);
+    backdrop-filter: blur(30px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+    border-radius: 10px;
+    color: white;
+    display: flex;
+    align-items: center;
+    transition: .3s ease;
+}
+.Wrapper1:hover{
+    box-shadow: 10px 10px 10px pink;
+}
+.Wrapper1 .form-box.register{
+    width: 100%;
+    padding: 30px;
+}
+.Wrapper1 .form-box.login{
+    transition: translate .18s ease;
+    translate: 0;
+}
+.Wrapper1 .form-box.register{
+    transition: translate .18s ease;
+    translate: 0;
+}
+
+form h1{
+    font-size: 34px;
+    text-align: center;
+    padding-top: 10px;
+}
+form .input-box{
+    position: relative;
+    width: 100%;
+    height: 50px;
+    margin: 30px 0;
+    
+}
+.input-box input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    border: 2px solid rgba(255, 255, 255, .1);
+    border-radius: 40px;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    padding: 20px 45px 20px 20px;
+}
+.input-box input::placeholder{
+    color: rgb(255, 255, 255)
+}
+.input-box .icon{
+    position: absolute;
+    right: 20px;
+    top: 40%;
+    translate: 0 -50;
+    font-size: 16px;
+}
+form .remember-forgot{
+    display: flex;
+    justify-content: space-between;
+    font-size: 14.5px;
+    margin: -15px 0 15px;
+}
+.remember-forgot label input{
+    accent-color: #fff;
+    margin-right: 4px;
+}
+.remember-forgot a{
+    color: white;
+    text-decoration: none;
+}
+.remember-forgot a:hover{
+    text-decoration: underline;
+}
+form button{
+    width: 100%;
+    height: 42px;
+    background-color: #fff;
+    border: none;
+    outline: none;
+    border-radius: 40px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .1);
+    cursor: pointer;
+    font-size: 16px;
+    color: #333;
+    font-weight: 700;
+}
+form .register-link{
+    font-size: 14.5px;
+    text-align: center;
+    margin: 20px 0 15px;
+}
+.register-link p a{
+    color: white;
+    text-decoration: none;
+    font-weight: 600;
+}
+.register-link p a:hover{
+    text-decoration: none;
+}

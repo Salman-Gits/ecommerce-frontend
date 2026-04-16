@@ -1,10 +1,10 @@
-import React, { useState } from "react";
+// import React, { useState } from "react";
 import "./CartPage.css";
-import { Navigate, useNavigate } from "react-router-dom";
+import {  useNavigate } from "react-router-dom";
 
 const CartPage = ({ cart, updateQuantity, removeFromCart, placeOrder }) => {
-  const [orderSuccess, setOrderSuccess] = useState(false);
-  const [orderPlaced, setOrderPlaced] = useState(false); // ✅ New state to track if order is placed
+  // const [orderSuccess, setOrderSuccess] = useState(false);
+  // const [orderPlaced, setOrderPlaced] = useState(false); // ✅ New state to track if order is placed
   const navigate = useNavigate();
   const totalAmount = cart.reduce((total, item) => total + item.price * item.quantity, 0);
   

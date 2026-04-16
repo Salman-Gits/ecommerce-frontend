@@ -1,9 +1,9 @@
 import React from "react";
-import { Link, useNavigate } from "react-router-dom";
+import { Link } from "react-router-dom";
 import "./OrderSuccess.css";
 
 const OrderSuccess = () => {
-  const navigate = useNavigate();
+  
 
   return (
     <div className="success-container">

@@ -29,11 +29,11 @@ const LoginRegister = () => {
         }).then((res) => {
           console.log(res.data);
 
-          if (res.data.message == "Login Success") {
+          if (res.data.message === "Login Success") {
             navigate('/home');
             alert("Login Success");
           }
-          else if (res.data.message == "Email not exits") {
+          else if (res.data.message === "Email not exits") {
             alert("email not exist")
           }
 
@@ -73,7 +73,7 @@ const LoginRegister = () => {
             <label>
               <input type="checkbox" /> Remember me
             </label>
-            <a href="#">Forgot Password?</a>
+            <a href="/">Forgot Password?</a>
           </div>
           <button onClick={handleLogin} type='submit'>Login</button>
           <div className='register-link'>

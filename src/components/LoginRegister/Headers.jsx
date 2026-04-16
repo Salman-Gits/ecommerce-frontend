@@ -1,14 +1,14 @@
 import React from 'react'
 import './Headers.css'
-import { IoCartSharp } from "react-icons/io5";
-import { Link } from 'react-router-dom';
+// import { IoCartSharp } from "react-icons/io5";
+// import { Link } from 'react-router-dom';
 
 
 const Headers = () => {
   return (
     <div className='over'>
       <header className="header">
-        <a href="" className="logo">SeeUsoon</a>
+        <a href="/home" className="logo">SeeUsoon</a>
         <nav className="navbar">
           <a href="/home">Home</a>
           <a href="/clothing">Clothing</a>

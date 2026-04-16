@@ -26,7 +26,7 @@ const LoginRegister = () => {
         await axios.post("https://ecommerce-backend-2sm5.onrender.com/api/login", {
           email: email,
           password: password,
-        }).then((res) => {
+        }).then((res) => {  
           console.log(res.data);
 
           if (res.data.message === "Login Success") {

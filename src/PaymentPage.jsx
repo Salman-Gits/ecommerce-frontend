@@ -1,6 +1,7 @@
 import React, { useState } from "react";
 import { useNavigate } from "react-router-dom";
 import "./PaymentPage.css";
+import Headers from "./components/LoginRegister/Headers";
 
 const PaymentPage = () => {
   const navigate = useNavigate();
@@ -24,6 +25,8 @@ const PaymentPage = () => {
   };
 
   return (
+    <>
+    <Headers />
     <div className="full"> 
     <div className="payment-container">
       <h2>Enter Payment Details</h2>
@@ -50,6 +53,7 @@ const PaymentPage = () => {
       </form>
     </div>
     </div>
+    </>
   );
 };
 

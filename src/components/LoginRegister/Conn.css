@@ -1,0 +1,82 @@
+/* ================= GLOBAL RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, sans-serif;
+}
+
+html, body, #root {
+  width: 100%;
+  height: 100%;
+  background: #f5f6fa;
+}
+
+/* ================= MAIN CONTAINER ================= */
+.conn-container {
+  width: 100%;
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+/* ================= HEADER ================= */
+header {
+  width: 100%;
+  height: 70px;
+  background: #111827;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 20px;
+}
+
+/* ================= SECTIONS COMMON STYLE ================= */
+section {
+  width: 100%;
+  padding: 50px 20px;
+}
+
+/* ================= HOME SECTION ================= */
+.home-section {
+  background: linear-gradient(135deg, #e0f2fe, #f0f9ff);
+  min-height: 80vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+/* ================= PRODUCT SECTION ================= */
+.product-section {
+  background: #ffffff;
+}
+
+/* ================= ABOUT SECTION ================= */
+.about-section {
+  background: #f9fafb;
+  text-align: center;
+}
+
+/* About content box */
+.about-box {
+  max-width: 900px;
+  margin: auto;
+  padding: 20px;
+  line-height: 1.6;
+  color: #333;
+}
+
+/* ================= RESPONSIVE ================= */
+@media (max-width: 768px) {
+
+  section {
+    padding: 30px 15px;
+  }
+
+  header {
+    flex-direction: column;
+    height: auto;
+    padding: 15px;
+  }
+}

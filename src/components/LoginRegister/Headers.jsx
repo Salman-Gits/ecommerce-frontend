@@ -1,25 +1,36 @@
-import React from 'react'
-import './Headers.css'
-// import { IoCartSharp } from "react-icons/io5";
-// import { Link } from 'react-router-dom';
-
+import React, { useState, useEffect } from 'react';
+import './Headers.css';
 
 const Headers = () => {
-  return (
-    <div className='over'>
-      <header className="header">
-        <a href="/home" className="logo">SeeUsoon</a>
-        <nav className="navbar">
-          <a href="/home">Home</a>
-          <a href="/clothing">Clothing</a>
-          <a href="/Electronics">Electronic</a>
-          <a href="/kitchen">Kitchen</a>
-          <a href="#about-section">About</a>
-          
-          </nav>
-      </header>
-    </div>
-  );
-}
+  const [menuOpen, setMenuOpen] = useState(false);
 
-export default Headers
+  // prevent scroll when menu open
+  useEffect(() => {
+    document.body.style.overflow = menuOpen ? "hidden" : "auto";
+  }, [menuOpen]);
+
+  return (
+    <header className="header">
+
+      {/* LEFT - LOGO */}
+      <a href="/home" className="logo">SeeUsoon</a>
+
+      {/* RIGHT - MENU ICON */}
+      <div className="menu-icon" onClick={() => setMenuOpen(!menuOpen)}>
+        {menuOpen ? "✖" : "☰"}
+      </div>
+
+      {/* MENU */}
+      <nav className={`header-nav ${menuOpen ? "active" : ""}`}>
+        <a href="/home" onClick={() => setMenuOpen(false)}>Home</a>
+        <a href="/clothing" onClick={() => setMenuOpen(false)}>Clothing</a>
+        <a href="/electronics" onClick={() => setMenuOpen(false)}>Electronics</a>
+        <a href="/kitchen" onClick={() => setMenuOpen(false)}>Kitchen</a>
+        <a href="#about-section" onClick={() => setMenuOpen(false)}>About</a>
+      </nav>
+
+    </header>
+  );
+};
+
+export default Headers;

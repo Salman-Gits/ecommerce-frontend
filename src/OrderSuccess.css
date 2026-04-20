@@ -1,92 +1,76 @@
+/* ================= SUCCESS PAGE ================= */
 .success-container {
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 62vh;
-  width: 450px;
-  background-color: #b2f1c5; /* Light green background */
-  animation: fadeIn 1s ease-in-out;
-  border-radius: 10px;
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(135deg, #0f172a, #14532d);
+  text-align: center;
+  padding: 20px;
 }
 
-/* Success icon animation */
+/* ICON */
 .success-icon {
-  width: 100px;
-  height: 100px;
-  background-color: #34d399; /* Green */
+  width: 110px;
+  height: 110px;
+  background: #22c55e;
   border-radius: 50%;
   display: flex;
   align-items: center;
   justify-content: center;
-  font-size: 50px;
+  font-size: 55px;
   color: white;
-  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  animation: popUp 0.6s ease-out;
+  box-shadow: 0 10px 30px rgba(0,0,0,0.4);
+  animation: pop 0.6s ease-out;
 }
 
-/* Text fade-in effect */
-.success-message, .success-subtext {
-  opacity: 0;
-  animation: fadeIn 1s ease-in-out forwards;
-  animation-delay: 0.3s;
-}
-
+/* TEXT */
 .success-message {
-  font-size: 24px;
+  font-size: 26px;
   font-weight: bold;
-  color: #064e3b; /* Dark green */
+  color: white;
   margin-top: 20px;
 }
 
 .success-subtext {
   font-size: 16px;
-  color: #065f46; /* Slightly lighter green */
+  color: #cbd5e1;
   margin-top: 5px;
 }
 
-/* Button fade-in effect */
+/* BUTTON */
 .success-button {
-  margin-top: 30px;
-  background-color: #0f766e; /* Dark teal */
+  margin-top: 25px;
+  padding: 12px 20px;
+  background: #0ea5e9;
   color: white;
-  padding: 10px 20px;
-  font-size: 16px;
-  border: none;
-  border-radius: 5px;
-  cursor: pointer;
+  border-radius: 8px;
   text-decoration: none;
-  opacity: 0;
-  animation: fadeIn 1s ease-in-out forwards;
-  animation-delay: 0.5s;
-  transition: transform 0.2s ease-in-out;
+  font-size: 15px;
+  transition: 0.3s;
 }
 
 .success-button:hover {
-  background-color: #0d9488; /* Lighter teal */
   transform: scale(1.05);
+  background: #0284c7;
 }
 
-/* Keyframes for animations */
-@keyframes popUp {
-  0% {
-      transform: scale(0);
-      opacity: 0;
-  }
-  80% {
-      transform: scale(1.2);
-  }
-  100% {
-      transform: scale(1);
-      opacity: 1;
-  }
+/* ANIMATION */
+@keyframes pop {
+  0% { transform: scale(0); }
+  80% { transform: scale(1.2); }
+  100% { transform: scale(1); }
 }
 
-@keyframes fadeIn {
-  0% {
-      opacity: 0;
+/* MOBILE */
+@media (max-width: 600px) {
+  .success-message {
+    font-size: 22px;
   }
-  100% {
-      opacity: 1;
+
+  .success-subtext {
+    font-size: 14px;
   }
 }

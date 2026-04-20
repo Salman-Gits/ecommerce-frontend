@@ -15,7 +15,7 @@ const Product = () => {
     const products = [
         { id: 1, name: "Clothing",  image: dress2 ,path: "/clothing"},
         { id: 2, name: "Mobile",   image: mobile2,path: "/electronics" },
-        { id: 3, name: "Laptops",  image: electronic ,path: "/celectronics" },
+        { id: 3, name: "Laptops",  image: electronic ,path: "/electronics" },
         { id: 4, name: "Shoes", image: shoe ,path: "/shoes" },
         { id: 5, name: "Kitchen",  image: kitchen ,path: "/kitchen" },
         { id: 6, name: "Home Aplliances",  image: home2,path: "/HomeAppliances" }

@@ -23,6 +23,7 @@
   .about-container h2 {
     font-size: 1.8rem;
     margin-top: 30px;
+    color: white;
   }
   
   .about-container ul {
@@ -33,5 +34,6 @@
   .about-container ul li {
     font-size: 1.1rem;
     margin: 8px 0;
+    color: gainsboro;
   }
   

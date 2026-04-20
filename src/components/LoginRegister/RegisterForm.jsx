@@ -1,15 +1,12 @@
 import './RegisterForm.css'
-import React, { useEffect, useState } from 'react'
+import React, {  useState } from 'react'
 import { FaUser, FaLock, FaEnvelope } from "react-icons/fa";
 import axios from 'axios';
-import two from './two.jpg'
+import LiquidEther from './LiquidEther';
+// import two from './two.jpg'
 
 
 const RegisterForm = () => {
-
-  useEffect(() => {
-    document.body.style.backgroundImage = `url(${two})`
-  }, [])
 
   const [email, setEmail] = useState('');
   const [name, setUsername] = useState('');
@@ -35,6 +32,28 @@ const RegisterForm = () => {
   }
 }
 return (
+   <div style={{ width: '100%', height: "100vh", position: 'relative' }}>
+     <LiquidEther
+      colors={[ '#5227FF', '#FF9FFC', '#B497CF' ]}
+      mouseForce={20}
+      cursorSize={100}
+      isViscous
+      viscous={30}
+      iterationsViscous={32}
+      iterationsPoisson={32}
+      resolution={0.5}
+      isBounce={false}
+      autoDemo
+      autoSpeed={0.5}
+      autoIntensity={2.2}
+      takeoverDuration={0.25}
+      autoResumeDelay={3000}
+      autoRampDuration={0.6}
+      color0="#5227FF"
+      color1="#FF9FFC"
+      color2="#B497CF"
+  />
+
   <div>
     <div className='Wrapper1'>
       <div className='form-box register'>
@@ -69,6 +88,7 @@ return (
       </div>
       {/* <LoginRegister email={email} password={password}/> */}
     </div>
+  </div>
   </div>
 )
    }

@@ -11,7 +11,7 @@ const CartPage = ({ cart, updateQuantity, removeFromCart, placeOrder }) => {
   return (
     <div className="cart-page" style={{ 
        background: "#f1f8e9 ",
-       minHeight: "100vh",padding: "20px" , width:"100vw"}}>
+       minHeight: "100vh",padding: "50px" , width:"100vw"}}>
       {cart.length > 0 && (
         <div>
           {cart.map((item, index) => (

@@ -1,67 +1,179 @@
-
+/* ================= BASE ================= */
 .category-grid {
-    text-align: center;
-    /* background-color: #f0d9e4;  */
-    width: 100vw; /* Full width */
-    min-height: 100vh; /* Full viewport height */
-    padding: 20px;
-    box-sizing: border-box;
+  text-align: center;
+  width: 100vw;
+  min-height: 100vh;
+  padding: 30px 15px;
+  box-sizing: border-box;
+  background: #f9fafb; /* 🔥 soft background */
+}
+
+h2 {
+  margin-bottom: 25px;
+  margin-top: 10px;
+  font-size: 28px;
+  color: #222;
+}
+
+/* ================= GRID ================= */
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  gap: 20px;
+  width: 100%;
+  padding: 0 20px;
+  box-sizing: border-box;
+  min-height: 100vh;
+}
+
+/* ================= CARD ================= */
+.card {
+  background: #ffffff;
+  border-radius: 12px;
+  overflow: hidden; /* 🔥 clean edges */
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+  transition: all 0.3s ease;
+  cursor: pointer;
+}
+
+/* IMAGE */
+.card img {
+  width: 100%;
+  height: 250px;
+  object-fit: cover;
+}
+
+/* CONTENT */
+.card h4 {
+  margin: 10px 0 5px;
+  font-size: 18px;
+  color: #333;
+}
+
+.card p {
+  color: #27ae60; /* 🔥 price highlight */
+  font-weight: bold;
+  margin-bottom: 10px;
+}
+
+/* BUTTON */
+.card button {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: white;
+  border: none;
+  padding: 10px;
+  width: 90%;
+  margin-bottom: 15px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.card button:hover {
+  background: linear-gradient(135deg, #0056b3, #003d80);
+}
+
+/* ================= HOVER EFFECT ================= */
+.card:hover {
+  transform: translateY(-6px); /* 🔥 lift effect */
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.15);
+}
+
+/* ================= TABLET ================= */
+@media (max-width: 900px) {
+
+  .grid {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
   }
-  
+
+  .card img {
+    height: 200px;
+  }
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 480px) {
+
+  .category-grid {
+    padding: 15px 10px;
+  }
+
   h2 {
-    margin-bottom: 27px;
-    margin-top: 6px;
+    font-size: 22px;
   }
 
   .grid {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 80px;
-    justify-content: center;
-    max-width: 1000px;
-    margin: auto;
+    grid-template-columns: 1fr;
+    gap: 18px;
   }
-  
+
   .card {
-    background: rgb(255, 255, 255);
-    border: 1px solid #ddd;
-    padding: 15px;
-    border-radius: 8px;
-    text-align: center;
-    box-shadow: 2px 2px 10px rgba(0, 0, 0, 0.1);
-    transition: transform 0.3s ease-in-out;
+    border-radius: 10px;
   }
-  
+
   .card img {
-    width: 240px;
-    height: 230px;
-    object-fit: cover;
-    margin-bottom: 8px;
+    height: 180px;
   }
-  
-  .card:hover{
-    transform: scale(1.1);
-    background-color: #e3e0e0;
-  }
-  .card h4 {
-    margin: 5px 0;
-  }
-  
-  .card p {
-    color: #666;
-  }
-  
+
   .card button {
-    background: blue;
-    color: white;
-    border: none;
-    padding: 8px 12px;
-    cursor: pointer;
-    border-radius: 5px;
-    margin-top: 10px;
+    width: 95%;
+    padding: 12px;
   }
-  
-  .card button:hover {
-    background: darkblue;
+
+  .card:hover {
+    transform: scale(1.02);
   }
-  
+}
+/* ================= HOME APPLIANCES SPECIAL DESIGN ================= */
+
+/* Page background enhancement */
+
+
+/* Card upgrade */
+.category-grid .card {
+  background: rgba(255, 255, 255, 0.9); /* glass feel */
+  backdrop-filter: blur(6px);
+  border-radius: 14px;
+  padding: 12px;
+  transition: all 0.3s ease;
+}
+
+/* Hover effect */
+.category-grid .card:hover {
+  transform: translateY(-8px) scale(1.02);
+  box-shadow: 0 12px 25px rgba(0, 0, 0, 0.2);
+}
+
+/* Image styling */
+.category-grid .card img {
+  border-radius: 10px;
+  height: 200px;
+  object-fit: cover;
+}
+
+/* Title */
+.category-grid .card h4 {
+  font-size: 18px;
+  margin-top: 10px;
+  color: #222;
+}
+
+/* Price */
+.category-grid .card p {
+  color: #0f766e; /* teal tone */
+  font-size: 16px;
+  font-weight: bold;
+}
+
+/* Button upgrade */
+.category-grid .card button {
+  border: none;
+  padding: 10px;
+  width: 90%;
+  border-radius: 6px;
+  color: white;
+  font-weight: 500;
+  transition: 0.3s;
+}
+

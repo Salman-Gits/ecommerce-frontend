@@ -1,4 +1,7 @@
 /* ================= BASE ================= */
+body{
+  padding-top: 38px;
+}
 .category-grid {
   text-align: center;
   width: 100vw;
@@ -94,6 +97,10 @@ h2 {
 
 /* ================= MOBILE ================= */
 @media (max-width: 480px) {
+
+  body{
+    padding-top: 57px;
+  }
 
   .category-grid {
     padding: 15px 10px;
